@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function ()
+    {
+      try
+      {
+        if (localStorage.getItem("darkMode") === "true")
+        {
+          document.documentElement.classList.add("dark");
+        }
+      }
+      catch (e) {}
+    })();
+  </script>
+  <title>Rabbit Town Software</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+</head>
+<body>
+<header>
+  <a href="index.html">
+    <img src="assets/logo/rabbitlogo_notext.png" alt="Rabbit Town Logo" class="logo">
+  </a>
+  <nav>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="dark-toggle-wrapper">
+      <label class="switch">
+        <input type="checkbox" id="dark-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+
+</header>
+
+<main>
+  <section class="hero">
+    <h1 class="fade-up">Open-source. No compromise.</h1>
+    <p class="fade-up-delayed">At Rabbit Town we develop software that is made to be accessible to everyone,
+      because software should serve people, not paywalls.</p>
+    <a class="cta fade-up-late" href="projects.html">Get Started</a>
+  </section>
+
+  <div class="hero-logo fade-up-late">
+    <img src="assets/logo/rabbitlogo_text.png" alt="Rabbit Town Software Logo">
+  </div>
+</main>
+
+
+<script src="js/toggle-darkmode.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function ()
+    {
+      try
+      {
+        if (localStorage.getItem("darkMode") === "true")
+        {
+          document.documentElement.classList.add("dark");
+        }
+      }
+      catch (e) {}
+    })();
+  </script>
+  <title>Privacy & License - Convertly</title>
+  <link rel="stylesheet" href="css/convertly-privacy.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+</head>
+<body>
+<header>
+  <a href="index.html">
+    <img src="assets/logo/rabbitlogo_notext.png" alt="Rabbit Town Logo" class="logo">
+  </a>
+  <nav>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="dark-toggle-wrapper">
+      <label class="switch">
+        <input type="checkbox" id="dark-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="privacy fade-up">
+    <h1 class="fade-up">Privacy & License – Convertly</h1>
+
+    <h2 class="fade-up-delayed">Privacy Policy</h2>
+    <p class="fade-up-delayed">Convertly does not collect, store, or transmit any user data.
+      All conversions happen locally on your device. The app includes no analytics,
+      tracking, or advertising libraries. Your usage stays completely private.</p>
+
+    <h2 class="fade-up-late">License</h2>
+    <p class="fade-up-late">Convertly is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU General Public License v3.0 (GPL-3.0)</a>.
+      This means you are free to use, modify, and distribute the app, provided your changes also remain under the same license.</p>
+
+    <ul class="fade-up-late">
+      <li><strong>✔️ Free and open-source</strong></li>
+      <li><strong>✔️ No ads or tracking</strong></li>
+      <li><strong>✔️ Commercial use allowed</strong></li>
+      <li><strong>❗ Modifications must remain GPL-3.0</strong></li>
+    </ul>
+
+    <p class="fade-up-late">Questions or feedback? Reach out at <a href="mailto:support@rabbittownsoftware.com">support@rabbittownsoftware.com</a>.</p>
+
+    <a href="convertly.html" class="back-link fade-up-late">← Back to Convertly</a>
+  </section>
+
+</main>
+
+<script src="js/toggle-darkmode.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function ()
+        {
+            try
+            {
+                if (localStorage.getItem("darkMode") === "true")
+                {
+                    document.documentElement.classList.add("dark");
+                }
+            }
+            catch (e) {}
+        })();
+    </script>
+    <title>Convertly - Rabbit Town Software</title>
+    <link rel="stylesheet" href="css/convertly.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="assets/logo/rabbitlogo_notext.png" alt="Rabbit Town Logo" class="logo">
+    </a>
+    <nav>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="dark-toggle-wrapper">
+            <label class="switch">
+                <input type="checkbox" id="dark-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="project-hero">
+        <h1 class="fade-up">Convertly</h1>
+        <p class="fade-up-delayed">A sleek, ad-free unit converter app that respects your time and privacy.</p>
+    </section>
+
+    <section class="project-details fade-up-late">
+        <h2>About Convertly</h2>
+        <p>Convertly is a fast and minimal unit converter app built for simplicity.
+            It supports all major categories including length, weight, temperature,
+            and more—all wrapped in a clean interface with zero ads or distractions.</p>
+
+        <h2>Features</h2>
+        <ul>
+            <li>Clean, ad-free interface</li>
+            <li>Real-time conversion updates</li>
+            <li>Support for metric and imperial units</li>
+            <li>100% offline — no data collected</li>
+            <li>Lightweight and responsive design</li>
+        </ul>
+
+        <div class="project-actions fade-up-late">
+            <a class="github-link" href="https://github.com/rabbit-town-software/convertly"
+               target="_blank">Source Code</a>
+            <a class="github-link" href="convertly-privacy.html">Privacy & License</a>
+        </div>
+    </section>
+</main>
+
+
+<script src="js/toggle-darkmode.js"></script>
+</body>
+</html>

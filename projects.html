@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function ()
+        {
+            try
+            {
+                if (localStorage.getItem("darkMode") === "true")
+                {
+                    document.documentElement.classList.add("dark");
+                }
+            }
+            catch (e) {}
+        })();
+    </script>
+    <title>Projects - Rabbit Town Software</title>
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="assets/logo/rabbitlogo_notext.png" alt="Rabbit Town Logo" class="logo">
+    </a>
+    <nav>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="dark-toggle-wrapper">
+            <label class="switch">
+                <input type="checkbox" id="dark-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="projects-header">
+        <h1 class="fade-up">Our Projects</h1>
+        <p class="fade-up-delayed">Explore the tools, games, and systems built by Rabbit Town Software.</p>
+    </section>
+
+    <section class="project-list">
+        <a href="misa-engine.html" class="project-card fade-up-late">
+            <h2>The Misa Engine</h2>
+            <p>A 2D RPG engine built in Java for creating turn-based,
+                pixel-art games—heavily inspired by classic Final Fantasy titles.</p>
+            <span class="arrow">→</span>
+        </a>
+
+        <a href="convertly.html" class="project-card fade-up-extra">
+            <h2>Convertly</h2>
+            <p>A minimalist, ad-free unit converter with a modern interface and real-time results.</p>
+            <span class="arrow">→</span>
+        </a>
+
+        <a href="coinvert.html" class="project-card fade-up-extra">
+            <h2>CoinVert</h2>
+            <p>A powerful currency converter supporting 200+ currencies—including cryptocurrencies—
+                with offline caching and historical trends.</p>
+            <span class="arrow">→</span>
+        </a>
+    </section>
+
+</main>
+<script src="js/toggle-darkmode.js"></script>
+</body>
+</html>

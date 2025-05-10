@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function ()
+    {
+      try
+      {
+        if (localStorage.getItem("darkMode") === "true")
+        {
+          document.documentElement.classList.add("dark");
+        }
+      }
+      catch (e) {}
+    })();
+  </script>
+  <title>CoinVert - Rabbit Town Software</title>
+  <link rel="stylesheet" href="css/coinvert.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+</head>
+<body>
+<header>
+  <a href="index.html">
+    <img src="assets/logo/rabbitlogo_notext.png" alt="Rabbit Town Logo" class="logo">
+  </a>
+  <nav>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="dark-toggle-wrapper">
+      <label class="switch">
+        <input type="checkbox" id="dark-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="project-hero">
+    <h1 class="fade-up">CoinVert</h1>
+    <p class="fade-up-delayed">A powerful, modern currency converter with real-time rates and a focus on privacy.</p>
+  </section>
+
+  <section class="project-details fade-up-late">
+    <h2>About CoinVert</h2>
+    <p>CoinVert is a clean, full-featured currency converter designed to support over 200 currencies including cryptocurrencies. With a sleek interface and real-time rate updates, it’s built to be fast, ad-free, and fully transparent about your data.</p>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Real-time exchange rate updates</li>
+      <li>Support for 200+ global currencies and crypto</li>
+      <li>Offline mode with cached rates</li>
+      <li>No ads, no tracking, no nonsense</li>
+      <li>Modern and convenient UI</li>
+    </ul>
+
+    <div class="project-actions fade-up-late">
+      <a class="github-link" href="https://github.com/rabbit-town-software/coinvert" target="_blank">Source Code</a>
+      <a class="github-link" href="coinvert-privacy.html">Privacy & License</a>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/toggle-darkmode.js"></script>
+</body>
+</html>

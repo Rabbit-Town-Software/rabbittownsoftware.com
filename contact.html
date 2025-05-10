@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem("darkMode") === "true") {
+                    document.documentElement.classList.add("dark");
+                }
+            } catch (e) {}
+        })();
+    </script>
+    <title>Contact - Rabbit Town Software</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="assets/logo/rabbitlogo_notext.png" alt="Rabbit Town Logo" class="logo">
+    </a>
+    <nav>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="dark-toggle-wrapper">
+            <label class="switch">
+                <input type="checkbox" id="dark-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="contact fade-up">
+        <h1 class="fade-up">Get in Touch</h1>
+        <p class="fade-up-delayed">If you have a question drop a message below!</p>
+
+        <form class="fade-up-late" action="https://formsubmit.co/support@rabbittownsoftware.com" method="POST">
+            <input type="hidden" name="_subject" value="New Contact Submission">
+            <input type="hidden" name="_template" value="box">
+            <input type="hidden" name="_next" value="https://rabbittownsoftware.com/thank-you.html">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</main>
+
+<script src="js/toggle-darkmode.js"></script>
+</body>
+</html>

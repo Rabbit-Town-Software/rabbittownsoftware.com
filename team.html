@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("darkMode") === "true") {
+          document.documentElement.classList.add("dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <title>Meet the Team - Rabbit Town Software</title>
+  <link rel="stylesheet" href="css/team.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+<header>
+  <a href="index.html">
+    <img src="assets/logo/rabbitlogo_notext.png" alt="Rabbit Town Logo" class="logo">
+  </a>
+  <nav>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="dark-toggle-wrapper">
+      <label class="switch">
+        <input type="checkbox" id="dark-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="team-header fade-up">
+    <h1 class="fade-up">Meet the Team</h1>
+    <p class="fade-up-delayed">The people behind Rabbit Town Software.</p>
+  </section>
+
+  <section class="team-grid">
+    <div class="team-card fade-up-late">
+      <img src="assets/profile/case.jpeg" alt="Case Presley" class="profile-pic">
+      <h2>Case Presley</h2>
+      <p class="role">Founder & Developer</p>
+      <p class="bio">Case is a software engineer and game developer focused on
+        building open-source tools and indie games.
+        Passionate about providing people with ethical and accessible software.</p>
+      <div class="social-links">
+        <a href="https://github.com/case-presley" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/case-presley" target="_blank">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="team-card fade-up-extra">
+      <img src="assets/profile/lacey.jpeg" alt="Lacey Presley" class="profile-pic">
+      <h2>Lacey Presley</h2>
+      <p class="role">Artist</p>
+      <p class="bio">Lacey creates the art that gives Rabbit Town Software its style—from beautiful pixel
+        art to clean logos. Her work helps turn ideas into something you can see and feel.</p>
+      <div class="social-links">
+        <a href="https://laceypresley.com" target="_blank">Website</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-cta fade-up-late">
+    <h2>Join Rabbit Town Software</h2>
+    <p>Interested in joining the team? Fill out the form below and tell us a bit about yourself!</p>
+
+    <form action="https://formsubmit.co/business@rabbittownsoftware.com" method="POST">
+      <input type="hidden" name="_subject" value="New Team Application">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_next" value="https://rabbittownsoftware.com/thank-you.html">
+
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="role">What would you like to contribute?</label>
+      <input type="text" id="role" name="role" placeholder="e.g. Programming, Art, Design" required>
+
+      <label for="message">Tell us about your work</label>
+      <textarea id="message" name="message" rows="6" required
+                placeholder="Tell us about your background, skills, and any relevant experience. Feel free to include portfolio links, GitHub, social profiles, or anything else you'd like us to see."></textarea>
+
+      <button type="submit">Apply Now</button>
+    </form>
+  </section>
+</main>
+
+<script src="js/toggle-darkmode.js"></script>
+</body>
+</html>

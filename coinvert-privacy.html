@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function ()
+    {
+      try
+      {
+        if (localStorage.getItem("darkMode") === "true")
+        {
+          document.documentElement.classList.add("dark");
+        }
+      }
+      catch (e) {}
+    })();
+  </script>
+  <title>Privacy & License - CoinVert</title>
+  <link rel="stylesheet" href="css/coinvert-privacy.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+</head>
+<body>
+<header>
+  <a href="index.html">
+    <img src="assets/logo/rabbitlogo_notext.png" alt="Rabbit Town Logo" class="logo">
+  </a>
+  <nav>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="dark-toggle-wrapper">
+      <label class="switch">
+        <input type="checkbox" id="dark-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="privacy fade-up">
+    <h1 class="fade-up">Privacy & License – CoinVert</h1>
+
+    <h2 class="fade-up-delayed">Privacy Policy</h2>
+    <p class="fade-up-delayed">CoinVert does not collect, track, or store any personal data. All conversion and rate lookup operations are performed without logging user behavior. We do not use analytics, ads, or tracking libraries. Your data stays on your device, where it belongs.</p>
+
+    <h2 class="fade-up-late">License</h2>
+    <p class="fade-up-late">CoinVert is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU General Public License v3.0 (GPL-3.0)</a>. This means you may freely use, modify, and redistribute the app as long as all derived works also remain under the same license.</p>
+
+    <ul class="fade-up-late">
+      <li><strong>✔️ Open-source and modification-friendly</strong></li>
+      <li><strong>✔️ No ads or data selling</strong></li>
+      <li><strong>✔️ Commercial use allowed</strong></li>
+      <li><strong>❗ Must remain GPL-3.0 licensed</strong></li>
+    </ul>
+
+    <p class="fade-up-late">If you have any questions, email us at <a href="mailto:support@rabbittownsoftware.com">support@rabbittownsoftware.com</a>.</p>
+
+    <a href="coinvert.html" class="back-link fade-up-late">← Back to CoinVert</a>
+  </section>
+
+</main>
+
+<script src="js/toggle-darkmode.js"></script>
+</body>
+</html>

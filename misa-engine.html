@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function ()
+        {
+            try
+            {
+                if (localStorage.getItem("darkMode") === "true")
+                {
+                    document.documentElement.classList.add("dark");
+                }
+            }
+            catch (e) {}
+        })();
+    </script>
+    <title>Misa Engine - Rabbit Town Software</title>
+    <link rel="stylesheet" href="css/misa-engine.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="assets/logo/rabbitlogo_notext.png" alt="Rabbit Town Logo" class="logo">
+    </a>
+    <nav>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="dark-toggle-wrapper">
+            <label class="switch">
+                <input type="checkbox" id="dark-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="project-hero">
+        <h1 class="fade-up">Misa Engine</h1>
+        <p class="fade-up-delayed">A completely free and open-source game engine built in
+            Java for creating classic turn-based pixel-art RPGs.</p>
+    </section>
+
+    <section class="project-details fade-up-late">
+        <h2>About Misa Engine</h2>
+        <p>Misa Engine is a lightweight, open-source RPG engine built in Java. Inspired by classic turn-based RPGs,
+            it provides a modular foundation for creating 2D,
+            tile-based games with clean architecture and no unnecessary overhead.</p>
+
+        <h2>Current Status</h2>
+        <ul>
+            <li><strong>Version:</strong> 0.1.1-alpha</li>
+            <li><strong>Stage:</strong> Physics Update (in progress)</li>
+            <li><strong>Stability:</strong> Early Alpha – Expect Bugs</li>
+        </ul>
+
+        <h2>Core Features</h2>
+        <ul>
+            <li>Modular animation and rendering system</li>
+            <li>Tilemap loading via Tiled `.tmx` format</li>
+            <li>Pixel-perfect rendering & smooth camera system</li>
+            <li>Event system, fixed time step, and keyboard input</li>
+            <li>Designed to be hackable and lightweight</li>
+        </ul>
+
+        <div class="project-actions fade-up-extra">
+            <a class="github-link" href="https://github.com/rabbit-town-software/misa-engine" target="_blank">Source Code</a>
+            <a class="github-link" href="misa-engine-privacy.html">Privacy & License</a>
+        </div>
+    </section>
+
+
+</main>
+<script src="js/toggle-darkmode.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function ()
+        {
+            try
+            {
+                if (localStorage.getItem("darkMode") === "true")
+                {
+                    document.documentElement.classList.add("dark");
+                }
+            }
+            catch (e) {}
+        })();
+    </script>
+    <title>Privacy & License - Misa Engine</title>
+    <link rel="stylesheet" href="css/misa-engine-privacy.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="assets/logo/rabbitlogo_notext.png" alt="Rabbit Town Logo" class="logo">
+    </a>
+    <nav>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="dark-toggle-wrapper">
+            <label class="switch">
+                <input type="checkbox" id="dark-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="privacy fade-up">
+        <h1 class="fade-up">Privacy & License – Misa Engine</h1>
+
+        <h2 class="fade-up-delayed">Privacy Policy</h2>
+        <p class="fade-up-delayed">Misa Engine does not collect, track, or transmit any personal data. It contains no analytics, telemetry, or background services. We value privacy and believe software should work without surveillance or hidden behavior.</p>
+
+        <h2 class="fade-up-late">License</h2>
+        <p class="fade-up-late">Misa Engine is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GNU General Public License v3.0 (GPL-3.0)</a>. You are free to use, study, modify, and redistribute the software as long as you preserve the same license.</p>
+
+        <ul class="fade-up-late">
+            <li><strong>✔️ Commercial use allowed</strong></li>
+            <li><strong>✔️ Modifications allowed</strong></li>
+            <li><strong>✔️ Distribution allowed</strong></li>
+            <li><strong>❗ Derivative works must also be GPL-3.0 licensed</strong></li>
+        </ul>
+
+        <p class="fade-up-late">If you have questions or concerns, contact <a href="mailto:support@rabbittownsoftware.com">support@rabbittownsoftware.com</a>.</p>
+
+        <a href="misa-engine.html" class="back-link fade-up-late">← Back to Misa Engine</a>
+    </section>
+
+</main>
+
+<script src="js/toggle-darkmode.js"></script>
+</body>
+</html>

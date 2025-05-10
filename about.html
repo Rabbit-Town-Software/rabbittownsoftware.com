@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function ()
+        {
+            try
+            {
+                if (localStorage.getItem("darkMode") === "true")
+                {
+                    document.documentElement.classList.add("dark");
+                }
+            }
+            catch (e) {}
+        })();
+    </script>
+    <title>About - Rabbit Town Software</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="assets/logo/rabbitlogo_notext.png" alt="Rabbit Town Logo" class="logo">
+    </a>
+    <nav>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="team.html">Team</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="dark-toggle-wrapper">
+            <label class="switch">
+                <input type="checkbox" id="dark-toggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="about">
+        <h1 class="fade-up">About Rabbit Town Software</h1>
+        <p class="fade-up-delayed">
+            Rabbit Town Software is an independent, developer-run studio dedicated to building open-source software crafted
+            with a user-first mentality and a commitment to digital ethics.
+        </p>
+        <hr class="fade-up-late">
+        <p class="fade-up-late">
+            Every project we release is licensed under the GPL-3.0, meaning it’s entirely free to use, study, share, and modify.
+            We don’t track users, collect data, or sell information—our work is built on a foundation of privacy,
+            transparency, and digital freedom.
+        </p>
+    </section>
+</main>
+<script src="js/toggle-darkmode.js"></script>
+</body>
+</html>

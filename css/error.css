@@ -1,0 +1,84 @@
+/* css/error.css */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #000;
+}
+
+body
+{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.error-container
+{
+    text-align: center;
+    padding: 2rem;
+}
+
+.bunny-icon
+{
+    height: 60px;
+    margin-bottom: 1.5rem;
+}
+
+h1
+{
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+p
+{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.home-link
+{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.home-link:hover
+{
+    background-color: #333;
+}
+
+/* === Mobile Styles === */
+@media (max-width: 600px)
+{
+    h1
+    {
+        font-size: 3rem;
+    }
+
+    p
+    {
+        font-size: 1rem;
+    }
+
+    .bunny-icon
+    {
+        height: 40px;
+    }
+
+    .home-link
+    {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+}
