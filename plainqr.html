@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    (function () {
+      try {
+        if (localStorage.getItem("darkMode") === "true") {
+          document.documentElement.classList.add("dark");
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <title>PlainQR - Rabbit Town Software</title>
+  <link rel="stylesheet" href="css/plainqr.css">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+<body>
+<header>
+  <a href="index.html">
+    <img src="assets/logo/rabbitlogo_notext.png" alt="Rabbit Town Logo" class="logo">
+  </a>
+  <nav>
+    <div class="nav-links">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="team.html">Team</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="dark-toggle-wrapper">
+      <label class="switch">
+        <input type="checkbox" id="dark-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="project-hero">
+    <h1 class="fade-up">PlainQR</h1>
+    <p class="fade-up-delayed">A minimalist QR scanner built for speed and privacy. No ads, no clutter, just results.</p>
+  </section>
+
+  <section class="project-details fade-up-late">
+    <h2>About PlainQR</h2>
+    <p>PlainQR is a fast, no-nonsense QR code scanner for Android. It launches instantly, scans quickly using Google ML Kit, and never collects your data. It’s the ideal tool when you just want to scan and go—without ads or distractions.</p>
+
+    <h2>Features</h2>
+    <ul>
+      <li>Ultra-fast QR code recognition</li>
+      <li>Ad-free, tracking-free experience</li>
+      <li>One-tap visit or dismiss interface</li>
+      <li>Auto-resume scanning when returning to app</li>
+      <li>Clean interface, built with Jetpack Compose</li>
+    </ul>
+
+    <div class="project-actions fade-up-late">
+      <a class="github-link" href="https://github.com/rabbit-town-software/plainqr"
+         target="_blank">Source Code</a>
+      <a class="github-link" href="plainqr-privacy.html">Privacy & License</a>
+    </div>
+  </section>
+</main>
+
+<script src="js/toggle-darkmode.js"></script>
+</body>
+</html>

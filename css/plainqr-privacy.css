@@ -1,0 +1,333 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: #000;
+}
+
+body
+{
+    background-color: #fff;
+    line-height: 1.6;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 2rem;
+    border-bottom: 1px solid #ccc;
+    height: 64px;
+}
+
+.logo
+{
+    height: 48px;
+    width: auto;
+    transform-origin: left center;
+    padding-top: 0.6rem;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-links
+{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.dark-toggle-wrapper
+{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 1rem;
+}
+
+.switch
+{
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+}
+
+.switch input
+{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider
+{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+}
+
+.slider:before
+{
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider
+{
+    background-color: #000;
+}
+
+input:checked + .slider:before
+{
+    transform: translateX(24px);
+}
+
+nav a
+{
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover
+{
+    text-decoration: underline;
+}
+
+.privacy
+{
+    max-width: 800px;
+    margin: 4rem auto 2rem;
+    padding: 0 2rem;
+    text-align: left;
+}
+
+.privacy h1
+{
+    font-size: 2.25rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.privacy h2
+{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.privacy p
+{
+    font-size: 1.1rem;
+    margin-bottom: 1.25rem;
+}
+
+.privacy ul
+{
+    padding-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.privacy li
+{
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.back-link
+{
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border: 1px solid #000;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.back-link:hover
+{
+    background-color: #000;
+    color: #fff;
+}
+
+
+/* === Dark Mode === */
+
+:root.dark body
+{
+    background-color: #000;
+    color: #fff;
+}
+
+:root.dark *
+{
+    color: #fff;
+}
+
+:root.dark header
+{
+    border-bottom: 1px solid #444;
+}
+
+:root.dark .logo
+{
+    filter: invert(1);
+}
+
+:root.dark nav a
+{
+    color: #fff;
+}
+
+:root.dark .slider
+{
+    background-color: #444;
+}
+
+:root.dark input:checked + .slider
+{
+    background-color: #fff;
+}
+
+:root.dark input:checked + .slider:before
+{
+    background-color: #000;
+}
+
+:root.dark .back-link
+{
+    border-color: #fff;
+    color: #fff;
+}
+
+:root.dark .back-link:hover
+{
+    background-color: #fff;
+    color: #000;
+}
+
+/* === Animations === */
+
+.fade-up
+{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.8s ease-out forwards;
+}
+
+.fade-up-delayed
+{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+.fade-up-late
+{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 1s ease-out forwards;
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeUp
+{
+    to
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* === Mobile Styles === */
+@media (max-width: 600px)
+{
+    header
+    {
+        flex-direction: row;       /* Keep horizontal layout */
+        flex-wrap: wrap;           /* Allow nav to wrap if needed */
+        align-items: center;
+        justify-content: space-between;
+        height: auto;
+        padding: .2rem;
+    }
+
+    .logo
+    {
+        margin-bottom: 0;          /* Remove unnecessary spacing */
+        max-width: 120px;          /* Optional: shrink logo for mobile */
+    }
+
+    nav
+    {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        width: auto;
+    }
+
+    .nav-links
+    {
+        flex-direction: row;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+
+    nav a
+    {
+        margin-left: 0;
+        font-size: 0.9rem;         /* Slightly smaller text on mobile */
+    }
+
+    .privacy
+    {
+        padding: 2rem 1rem;
+    }
+
+    .privacy h1
+    {
+        font-size: 1.75rem;
+    }
+
+    .privacy h2
+    {
+        font-size: 1.25rem;
+    }
+
+    .privacy p,
+    .privacy li
+    {
+        font-size: 1rem;
+    }
+
+    .back-link
+    {
+        width: 100%;
+        text-align: center;
+    }
+}
